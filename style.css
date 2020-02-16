@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,600&display=swap');
+
+body, main, div, h1, p {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Open Sans',Arial,Helvetica,sans-serif;
+}
+
+h1 {
+    /* position: absolute; */
+    /* width: 100%; */
+    margin-top: 1rem;
+    font-weight: 300;
+}
+
+p {
+    margin-top: 5rem;
+}
+
+.clock {
+    /* position: absolute; */
+    width: 20rem;
+    height: 20rem;
+    margin: 3rem auto;
+    border-radius: 50%;
+    background: #ededef;
+    box-shadow: 50px 50px 100px #dfdfe1,
+                -50px -50px 100px #fbfbfd;
+}
+
+.clock-face {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    /* background-color: pink; */
+    border-radius: 50%;
+}
+
+.hand {
+    position: absolute;
+    top: 4.4%;
+    left: 50%;
+    width: 3px;
+    height: 50%;
+    background-color: rgb(204, 204, 204);
+    transform-origin: center 90%;
+    transition: all 5ms;
+    transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+    /* transform: rotate(10deg); */
+}
+
+.hr-hand {
+    top: 26%;
+    left: 51%;
+    height: 25%;
+    /* width: 6px; */
+    background-color: rgb(204, 60, 60);
+    /* transform: rotate(36deg); */
+}
+
+.min-hand {
+    background-color: rgb(65, 65, 65);
+}
+
+
+.background {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -10;
+    background-image: url('img/bench-accounting.jpg');
+    background-position: center;
+    background-position-y: 20%;
+}
